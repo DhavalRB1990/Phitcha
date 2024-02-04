@@ -3,70 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HEART DEMO</title>
+<title>Romantic Greeting</title>
 <style>
-body {
-    background-color: #ffceed;
-    font-family: 'Arial', sans-serif; /* Fallback font */
-    /* Include a romantic font similar to the one used previously */
-    font-family: 'Brush Script MT', cursive; /* This line will override the above if the font is available */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack items vertically */
-    height: 100vh;
-    margin: 0;
-    overflow: hidden; /* Prevent scrolling caused by heart animations */
-}
-.heart {
-    z-index: 999;
-    animation: heartfade 6s linear;
-    position: absolute;
-}
-.heart:before,
-.heart:after {
-    content: "";
-    background-color: #fc2a62;
-    position: absolute;
-    height: 30px;
-    width: 45px;
-    border-radius: 15px 0px 0px 15px;
-}
-.heart:before {
-    transform: rotate(45deg);
-}
-.heart:after {
-    left: 10.5px;
-    transform: rotate(135deg);
-}
-@keyframes heartfade {
-    0% {
-        opacity: 1;
+    body {
+        background-color: #ffe0f0; /* Soft pink background */
+        font-family: 'Brush Script MT', cursive; /* Use a romantic, cursive font */
+        color: #800000; /* Deep red color for the text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('https://example.com/flowers-background.jpg'); /* Add a flower background */
+        background-size: cover; /* Ensure background covers the whole page */
+        background-position: center;
     }
-    50% {
-        opacity: 0;
+    .greeting {
+        background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+        padding: 20px;
+        border-radius: 10px; /* Rounded corners for the container */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        max-width: 80%; /* Ensure the container does not get too wide on larger screens */
+        text-align: center; /* Center the text inside the container */
     }
-}
-.message {
-    position: fixed; /* Keep the message visible and positioned regardless of heart animations */
-    top: 20%; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fc2a62; /* Matching the heart color */
-    text-align: center;
-    font-size: 24px; /* Adjust based on your preference */
-    z-index: 1000; /* Ensure it's above the hearts */
-}
 </style>
 </head>
 <body>
 
-<div class="message">
-    เฮ้ที่รัก, วันนี้คุณเป็นอย่างไรบ้าง?
+<div class="greeting">
+    <h1>Hello Babe, How are you?</h1>
+    <p>เฮ้ที่รัก วันนี้คุณเป็นอย่างไรบ้าง?</p> <!-- Added Thai text -->
 </div>
 
-<script>
-// Your existing JavaScript code remains unchanged
-</script>
 </body>
 </html>
